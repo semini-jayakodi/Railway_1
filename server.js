@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 // ---------------------------
 mongoose
   .connect(
-    'mongodb+srv://Rio:RioAstal1234@rio.kh2t4sq.mongodb.net/myDatabase?retryWrites=true&w=majority',
+    'mongodb+srv://pavanisemini:pavani1234@cluster0.mrhrn.mongodb.net/?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log('Connected to MongoDB'))
@@ -158,9 +158,9 @@ app.listen(PORT, () => {
 const device_id = "Device0001";
 const mqttServer = "broker.hivemq.com";
 const mqttPort = 1883;
-const mqttUser = "semini";
-const mqttPassword = "Semini1234";
-const mqttClientId = "hivemq.webclient.1739520977150";
+const mqttUser = "pavani";
+const mqttPassword = "Pavani1234";
+const mqttClientId = "hivemq.webclient.1739544498790";
 const mqttBrokerUrl = `mqtt://${mqttServer}`;
 
 const mqttClient = mqtt.connect(mqttBrokerUrl, {
