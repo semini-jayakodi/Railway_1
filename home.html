@@ -89,6 +89,22 @@
       font-size: 16px;
       color: #032e0c;
     }
+    /* Buttons styling */
+    .graph-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .rainfall-btn {
+      background-color: #007BFF;
+    }
+    .ammonia-btn {
+      background-color: #28A745;
+    }
   </style>
   <!-- Chart.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -115,6 +131,12 @@
           This system monitors real-time rainfall and ammonia gas levels using IoT sensors.
           The graphs below show the historical trends for each sensor.
         </p>
+        
+        <!-- New Buttons for opening graphs in a new tab -->
+        <div id="graph-buttons" style="text-align: center; margin-bottom: 20px;">
+          <a href="https://railwaytest-production-de6b.up.railway.app/Ggraph.html" target="_blank" class="graph-button rainfall-btn">View Rainfall Graph</a>
+          <a href="https://railwaytest-production-de6b.up.railway.app/Mgraph.html" target="_blank" class="graph-button ammonia-btn">View Ammonia Graph</a>
+        </div>
         
         <!-- Rainfall Graph -->
         <div class="graph-container">
