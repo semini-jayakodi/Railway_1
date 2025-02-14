@@ -159,8 +159,8 @@ const device_id = "Device0001";
 const mqttServer = "broker.hivemq.com";
 const mqttPort = 1883;
 const mqttUser = "semini";
-const mqttPassword = "Semini17";
-const mqttClientId = "hivemq.webclient.1717873306472";
+const mqttPassword = "Semini1234";
+const mqttClientId = "hivemq.webclient.1739520977150";
 const mqttBrokerUrl = `mqtt://${mqttServer}`;
 
 const mqttClient = mqtt.connect(mqttBrokerUrl, {
